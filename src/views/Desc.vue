@@ -121,7 +121,11 @@ export default {
     },
     methods: {
         submitPeminjaman() {
+<<<<<<< HEAD
             fetch('hhttp://localhost/buku-backend/peminjamanBuku.php', {
+=======
+            fetch('http://localhost/bukuweb/peminjamanbuku.php', {
+>>>>>>> 94198d6 (commit)
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -139,7 +143,11 @@ export default {
                 });
         },
         submitPengembalian() {
+<<<<<<< HEAD
             fetch('http://localhost/buku-backend/pengembalianBuku.php', {
+=======
+            fetch('http://localhost/bukuweb/pengembalianbuku.php', {
+>>>>>>> 94198d6 (commit)
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -158,7 +166,11 @@ export default {
         },
         fetchPeminjamanDipinjam() {
             // Panggil API backend PHP untuk mendapatkan data peminjaman dengan status DIPINJAM
+<<<<<<< HEAD
             axios.get('http://localhost/buku-backend/listStatusDipinjam.php')
+=======
+            axios.get('http://localhost/bukuweb/liststatusdipinjam.php')
+>>>>>>> 94198d6 (commit)
                 .then((response) => {
                     this.peminjamanDipinjam = response.data;
                 })
@@ -168,7 +180,11 @@ export default {
         },
         fetchPeminjamanDikembalikan() {
             // Panggil API backend PHP untuk mendapatkan data peminjaman dengan status DIKEMBALIKAN
+<<<<<<< HEAD
             axios.get( 'http://localhost/buku-backend/listStatusDikembalikan.php')
+=======
+            axios.get( 'http://localhost/bukuweb/liststatusdikembalikan.php')
+>>>>>>> 94198d6 (commit)
                 .then((response) => {
                     this.peminjamanDikembalikan = response.data;
                 })
